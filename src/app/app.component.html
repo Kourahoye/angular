@@ -1,4 +1,13 @@
-
-<div class=""><app-header></app-header>
-<app-section-p></app-section-p>
-<app-footer></app-footer></div>
+<div class="min-w-fit flex flex-col">
+    <app-header></app-header>
+    <main class="h-[80vh] min-w-full bg-black flex flex-col justify-around md:flex-row">
+        <div class="md:w-[20vh]">
+            <app-nav></app-nav>
+        </div>
+        <div class="flex-grow w-full h-full flex flex-col justify-between md:w-[80vh] lg:flex-row lg:grid lg:grid-cols-4">
+            <app-article class="col-span-3"></app-article>
+            <app-section></app-section>
+        </div>
+    </main>
+    <app-footer></app-footer>
+</div>
